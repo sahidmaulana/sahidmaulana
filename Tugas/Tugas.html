@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Info Sukamara</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: url('https://portal.sukamarakab.go.id/wp-content/uploads/2024/10/BgSlider-08-1030x530.jpeg') center/cover no-repeat;
+      opacity: 0.5; /* Meningkatkan visibilitas konten */
+      z-index: -1;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.9); /* Lebih gelap untuk kontras yang lebih baik */
+      backdrop-filter: blur(15px);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .jumbotron {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url('https://prokalteng.jawapos.com/wp-content/uploads/054005-21-sukamara.ok.jpg') center/cover no-repeat;
+      color: white;
+      border-radius: 1.5rem; /* Lebih bulat */
+      padding: 5rem 2rem; /* Penambahan padding */
+      margin-bottom: 3rem;
+      text-align: center;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .jumbotron .btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 1.2rem; /* Ukuran font lebih besar */
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .jumbotron .btn:hover {
+      transform: scale(1.1);
+      background-color: #28a745; /* Warna hijau lebih cerah */
+    }
+
+    h2, h3 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .card {
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Bayangan lebih dalam */
+      border: none;
+      border-radius: 1.5rem; /* Lebih bulat */
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px); /* Efek hover lebih dramatis */
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 1rem 0; /* Penambahan padding */
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .list-group-item {
+      border: none;
+      border-bottom: 1px solid #ddd;
+      transition: background 0.3s ease;
+    }
+
+    .list-group-item:hover {
+      background-color: #e9ecef; /* Warna latar belakang lebih cerah saat hover */
+    }
+
+    .navbar-nav .nav-item .nav-link {
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar-nav .nav-item .nav-link:hover {
+      transform: scale(1.1);
+      color: #28a745; /* Warna hijau lebih cerah */
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar with Logo -->
+<nav class="navbar navbar-expand-lg navbar-dark animate__animated animate__fadeInDown">
+  <div class ="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+      <img src="https://scontent-cgk1-2.xx.fbcdn.net/v/t39.30808-6/441525552_961751435958808_7609072602082758613_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHcQ4w3rqsd_gyHpS9gtbccpKFY8sUhzX-koVjyxSHNf3ToWLkuo0wfLfZjDcUd4j7F-eyorgVLWlB-GTWYtI46&_nc_ohc=ck51kEMO5BUQ7kNvwGwFp_t&_nc_oc=Adnqf_GOwyuE4LkFyxyo1795ugO3CDP8zeq7caIS9L9n0flNOf9cTVNW3uyB6ryHQZQ&_nc_zt=23&_nc_ht=scontent-cgk1-2.xx&_nc_gid=mbXaO0_HgOdp8cQUdNGQBQ&oh=00_AfI8j4g3HtLIg_Bd5UTAAMBYhFDLhRWvP_hPLj1QUkSuuQ&oe=681F6E31" alt="Logo Sukamara" style="height: 50px; margin-right: 10px;">
+      Situs Sukamara
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Layanan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Jumbotron -->
+<div class="container jumbotron mt-4 animate__animated animate__zoomIn">
+  <h1 class="display-4 fw-bold">Selamat Datang Di Sukamara!</h1>
+  <p class="lead">Sukamara adalah kota Permata Kecubung yang Indah dan Menawan</p>
+  <hr class="my-4" style="border-color: rgba(255,255,255,0.5);">
+  <p>Untuk Info Lebih Lanjut, Silahkan Klik Tombol Dibawah ini!</p>
+  <a class="btn btn-success rounded-pill" href="https://portal.sukamarakab.go.id/" role="button" target="_blank">Pelajari Lebih Lanjut</a>
+</div>
+
+<!-- Konten Kolom -->
+<div class="container animate__animated animate__fadeIn">
+  <div class="row">
+    <!-- Kolom Deskripsi -->
+    <div class="col-md-8">
+      <div class="card p-4 mb-4">
+        <h2>Deskripsi Sukamara</h2>
+        <p>Sukamara adalah sebuah kota yang juga menjadi ibu kota dari Kabupaten Sukamara, yang terletak di bagian barat Provinsi Kalimantan Tengah, Indonesia. Kota ini dikenal sebagai gerbang barat Kalimantan Tengah dan memiliki posisi strategis karena berbatasan langsung dengan Provinsi Kalimantan Barat. Sukamara menawarkan pesona alam yang masih asri, dengan hutan mangrove, pantai alami, serta kekayaan flora dan fauna khas Kalimantan.</p>
+        <p>Perekonomian kota ini didominasi oleh sektor pertanian, perkebunan (khususnya kelapa sawit), perikanan, dan peternakan. Masyarakatnya hidup dalam kerukunan dengan budaya lokal yang masih kuat, termasuk tradisi Dayak yang terus dilestarikan. Sukamara juga memiliki potensi wisata alam dan ekowisata, seperti Pantai Tanjung Nipah, Sungai Jelai, dan kawasan konservasi satwa.</p>
+        <p>Dengan perkembangan infrastruktur yang terus meningkat dan dukungan dari pemerintah daerah, Sukamara sedang berkembang menjadi kota yang nyaman untuk ditinggali sekaligus menjanjikan untuk investasi di berbagai sektor.</p>
+        <h3>Info Lebih Lanjut</h3>
+        <ul>
+          <li>@InfoSukamara</li>
+          <li>+62821-483 0-9683</li>
+          <li>Jl.Pangeran Sukarma</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Kolom Info Tambahan -->
+    <div class="col-md-4">
+
+      <!-- Map Sidebar - DIPINDAHKAN KE ATAS -->
+      <div class="card mb-3 animate__animated animate__fadeInLeft">
+        <div class="card-body">
+          <h5 class="card-title">Peta Kabupaten Sukamara</h5>
+          <div class="ratio ratio-4x3 rounded shadow">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127713.58693270558!2d111.00325445000001!3d-2.3413394999999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dfb4e168bbd0de5%3A0x3027a76e352bd50!2sKabupaten%20Sukamara%2C%20Kalimantan%20Tengah!5e0!3m2!1sid!2sid!4v1714982679885!5m2!1sid!2sid" 
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <h2>Info Sukamara</h2>
+      <div class="card mb-3 animate__animated animate__fadeInRight">
+        <div class="card-body">
+          <h5 class="card-title">Info Tambahan</h5>
+          <p class="card-text">Mau Info sekilas Sukamara seperti makanan Tradisional, Wisata, atau informasi terkait lainnya bisa klik dibawah ini.</p>
+          <a href="#" class="btn btn-info btn-sm rounded-pill" onclick="toggleInfo()">Lihat Lebih Banyak</a>
+          <div id="more-info" class="mt-3" style="display: none; animation: fadeIn 1s ease;">
+            <div class="row g-3">
+              <div class="col-6">
+                <img src="https://assets.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/radarsampit/2023/03/FASILITAS-PANTAI-RUSAK.jpg" alt="Pantai Lunci" class="img-fluid rounded shadow">
+              </div>
+              <div class="col-6">
+                <img src="https://ksmtour.com/media/images/articles12/taman-nasional-sebangau-kalimantan-tengah.jpg" alt="Hutan Mangrove" class="img-fluid rounded shadow">
+              </div>
+              <div class="col-12">
+                <img src="https://mijil.id/uploads/default/original/2X/1/1c219901bdf522c5a98c805fb576b2617207fd68.jpeg" alt="Bukit Jalungga" class="img-fluid rounded shadow">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card animate__animated animate__fadeInRight animate__delay-1s">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Info Pantai Lunci</li>
+          <li class="list-group-item">Info Balai Riam</li>
+          <li class="list-group-item">Info Sukamara</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Galeri Foto Button -->
+<div class="container mt-5 animate__animated animate__fadeIn">
+  <h2 class="text-center mb-4">Galeri Foto Sukamara</h2>
+  <button class="btn btn-primary d-block mx-auto mb-4" id="show-gallery-btn" onclick="toggleGallery()">Lihat Galeri Foto</button>
+  <div id="gallery" style="display: none;">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col animate__animated animate__fadeInUp animate__delay-1s">
+        <div class="card h-100">
+          <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/234/2025/ 01/03/OPEN-1500185453.jpg" class="card-img-top img-fluid" alt="Gambar 1" />
+        </div>
+      </div>
+      <div class="col animate__animated animate__fadeInUp animate__delay-1.2s">
+        <div class="card h-100">
+          <img src="https://portal.sukamarakab.go.id/wp-content/uploads/2024/10/BgSlider-03-1030x529.jpeg" class="card-img-top img-fluid" alt="Gambar 2" />
+        </div>
+      </div>
+      <div class="col animate__animated animate__fadeInUp animate__delay-1.4s">
+        <div class="card h-100">
+          <img src="https://portal.sukamarakab.go.id/wp-content/uploads/2024/10/BgSlider-04-1030x529.jpeg" class="card-img-top img-fluid" alt="Gambar 3" />
+        </div>
+      </div>
+
+      <div class="col animate__animated animate__fadeInUp animate__delay-1.6s">
+        <div class="card h-100">
+          <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/243/2024/08/12/08069c4d-5d15-4b47-8c4a-0686cfb65c6b-2958926429.jpeg" class="card-img-top img-fluid" alt="Gambar 4" />
+        </div>
+      </div>
+      <div class="col animate__animated animate__fadeInUp animate__delay-1.8s">
+        <div class="card h-100">
+          <img src="https://mmc.kotawaringinbaratkab.go.id/assets/foto_berita/8b4571792772ca84d625a29bf88797e6.jpeg" class="card-img-top img-fluid" alt="Gambar 5" />
+        </div>
+      </div>
+      <div class="col animate__animated animate__fadeInUp animate__delay-2s">
+        <div class="card h-100">
+          <img src="https://rasasayange.co.id/assets/images/large_resep_91_gangan%20asam%20patin%20banjar.jpg" class="card-img-top img-fluid" alt="Gambar 6" />
+        </div>
+      </div>
+
+      <div class="col animate__animated animate__fadeInUp animate__delay-2.2s">
+        <div class="card h-100">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipOuf9kq68K-BWAFH9jb5kwQmaRMdPdidTMEu4u4=s1360-w1360-h1020" class="card-img-top img-fluid" alt="Gambar 7" />
+        </div>
+      </div>
+      <div class="col animate__animated animate__fadeInUp animate__delay-2.4s">
+        <div class="card h-100">
+          <img src="https://mijil.id/uploads/default/original/2X/1/1c219901bdf522c5a98c805fb576b2617207fd68.jpeg" class="card-img-top img-fluid" alt="Gambar 8" />
+        </div>
+      </div>
+      <div class="col animate__animated animate__fadeInUp animate__delay-2.6s">
+        <div class="card h-100">
+          <img src="https://seringjalan.com/wp-content/uploads/2020/04/pantai-tanjung-nipah.png" class="card-img-top img-fluid" alt="Gambar 9" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start mt-5">
+  <div class="text-center p-3">
+    <p>&copy; 2025 Sukamara Tourism. All Rights Reserved</p>
+  </div>
+</footer>
+
+<!-- JavaScript untuk Toggle Galeri Foto -->
+<script>
+  function toggleGallery() {
+    var gallery = document.getElementById('gallery');
+    var button = document.getElementById('show-gallery-btn');
+    if (gallery.style.display === "none" || gallery.style.display === "") {
+      gallery.style.display = "flex";
+      button.innerHTML = "Sembunyikan Galeri Foto"; // Mengubah teks tombol
+    } else {
+      gallery.style.display = "none";
+      button.innerHTML = "Lihat Galeri Foto"; // Mengubah teks tombol
+    }
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
